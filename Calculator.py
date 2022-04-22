@@ -55,24 +55,24 @@ for value in range(len(resistor_values)-1):
 
 if resistor_values[select] < 1000:
     if requested_value in compiled_resistor_values:
-        print(f'You only need one {requested_value} O resistor')
+        print(f'You only need one {requested_value} ohm resistor')
     else:
         # prints 2 decimals correctly, rounding may prevent this
         actual_value = round(resistor_values[select],2)
         actual_value = "{:.3f}".format(actual_value)
         
         print(resistor_combination[select])
-        print(f'Actual Value: {actual_value} O')
+        print(f'Actual Value: {actual_value} ohm')
 else:
     if requested_value in compiled_resistor_values:
-        print(f'You only need one {requested_value/1000} kO resistor')
+        print(f'You only need one {requested_value/1000} kilo ohm resistor')
     else:
         # prints 2 decimals correctly, rounding may prevent this
         actual_value = round(resistor_values[select]/1000,2)
         actual_value = "{:.3f}".format(actual_value)
         
         print(resistor_combination[select])
-        print(f'Actual Value: {actual_value} kO')
+        print(f'Actual Value: {actual_value} kilo ohm')
 
 
 
