@@ -73,6 +73,8 @@ else:
         
         print(resistor_combination[select])
         print(f'Actual Value: {actual_value} kilo ohm')
+        
+print(f'with {overshoot} ohm overshoot allowed')
 
 
 
